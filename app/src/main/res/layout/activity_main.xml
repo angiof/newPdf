@@ -3,36 +3,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#aaa69d"
     android:layout_height="match_parent"
+    android:background="#aaa69d"
     tools:context=".activities.views.MainActivity">
 
     <ImageButton
         android:id="@+id/btnPspKit"
-        android:layout_width="132dp"
-        android:layout_height="66dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="346dp"
+        android:layout_marginEnd="58dp"
         android:src="@drawable/ic_psdfkit"
         android:text="Button"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="346dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/btnPdfView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="94dp"
-        android:layout_height="28dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="291dp"
         android:text="pspdfKit"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnPspKit"
         app:layout_constraintStart_toStartOf="@+id/btnPspKit"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPspKit" />
 
     <Button
         android:id="@+id/btnPdfView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
         android:text="PdfViewer"
         app:layout_constraintBottom_toBottomOf="@+id/btnPspKit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnPspKit"
         app:layout_constraintTop_toTopOf="@+id/btnPspKit" />
+
+    <TextView
+        android:id="@+id/goOnline"
+        android:layout_width="72dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="44dp"
+        android:text="online"
+        app:layout_constraintBottom_toTopOf="@+id/btnPspKit"
+        app:layout_constraintEnd_toEndOf="@+id/btnPspKit"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/btnPspKit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
