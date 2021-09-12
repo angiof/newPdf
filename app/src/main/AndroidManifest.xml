@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewPdf">
         <activity
+            android:name=".activities.views.online.ActvityOnline"
+            android:exported="true" />
+        <activity
             android:name=".activities.views.ActivityPdfView"
             android:exported="true" />
         <activity
