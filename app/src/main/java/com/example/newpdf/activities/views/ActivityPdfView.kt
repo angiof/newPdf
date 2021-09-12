@@ -42,11 +42,8 @@ class ActivityPdfView : AppCompatActivity() {
             .onError {
                 Toast.makeText(this, "errore local", Toast.LENGTH_SHORT).show()
             }
-            .enableAnnotationRendering(true)
-            .enableDoubletap(true)
             .autoSpacing(true)
             .enableSwipe(true)
-            .enableAntialiasing(true)
             .enableAnnotationRendering(true)
             .defaultPage(0)
             .enableAnnotationRendering(true)
