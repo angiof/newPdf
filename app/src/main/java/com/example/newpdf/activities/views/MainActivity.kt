@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.title = "pdf render demo v1"
+
 
 
         btn2 = findViewById(R.id.btnPdfView)
@@ -35,7 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         btn3 = findViewById(R.id.goOnline)
         btn3.setOnClickListener {
+
             startActivity(Intent(this, ActvityOnline::class.java))
+            Toast.makeText(this, "versione a online URL adobe a pagamento", Toast.LENGTH_SHORT)
+                .show()
+
         }
 
     }

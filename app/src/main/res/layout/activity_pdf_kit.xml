@@ -4,6 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e1bee7"
     tools:context=".activities.views.ActivityPdfKit">
 
+    <TextView
+        android:id="@+id/textoUscita"
+        android:layout_width="377dp"
+        android:layout_height="126dp"
+        android:fontFamily="monospace"
+        android:text="premere nuovamente il tasto Back per tornare alla home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
