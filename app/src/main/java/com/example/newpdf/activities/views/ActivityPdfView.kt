@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.newpdf.R
 import com.github.barteksc.pdfviewer.PDFView
+import com.github.barteksc.pdfviewer.util.FitPolicy
 import java.io.ByteArrayOutputStream
 
 class ActivityPdfView : AppCompatActivity() {
@@ -27,7 +28,7 @@ class ActivityPdfView : AppCompatActivity() {
         // val fileContent: ByteArray = Files.readAllBytes(file?.toPath())
 
 
-        val input = this.assets.open("pdf.pdf")
+        val input = this.assets.open("am.pdf")
 
         val buffer = ByteArrayOutputStream()
         var nRead: Int
@@ -42,9 +43,13 @@ class ActivityPdfView : AppCompatActivity() {
             .onError {
                 Toast.makeText(this, "errore local", Toast.LENGTH_SHORT).show()
             }
+            .swipeHorizontal(true)
             .autoSpacing(true)
             .enableSwipe(true)
-            .enableAnnotationRendering(true)
+            .pageFitPolicy(FitPolicy.WIDTH) // mode to fit pages in the view
+            .fitEachPage(false) // fit each page to the view, else smaller pages are scaled relative to largest page.
+
+            .enableAntialiasing(true)
             .defaultPage(0)
             .enableAnnotationRendering(true)
             .onPageError { _, t ->
