@@ -10,6 +10,12 @@
     tools:context=".activities.views.MainActivity">
 
     <Button
+        android:id="@+id/btnweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="webView" />
+
+    <Button
         android:id="@+id/btnPdfView"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
         android:layout_width="match_parent"

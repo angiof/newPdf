@@ -6,12 +6,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@drawable/ic_psdfkit"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewPdf">
+        <activity
+            android:name=".activities.views.AcitivtyWebView"
+            android:exported="true" />
         <activity
             android:name=".activities.views.online.ActvityOnline"
             android:exported="true" />

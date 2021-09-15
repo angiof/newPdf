@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btn: View
     private lateinit var btn2: View
     private lateinit var btn3: View
+    private lateinit var btn4: View
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,6 +42,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ActvityOnline::class.java))
             Toast.makeText(this, "versione a online URL adobe a pagamento", Toast.LENGTH_SHORT)
                 .show()
+
+        }
+        btn4 = findViewById(R.id.btnweb)
+        btn4.setOnClickListener {
+
+            startActivity(Intent(this, AcitivtyWebView::class.java))
+
 
         }
 
