@@ -44,7 +44,7 @@ class AcitivtyWebView : AppCompatActivity() {
             }
 
         };
-        var urlPdf = "https://www.conoscifirenze.it/upload_file/articoli/files/1-per-un-giorno-firenze.pdf"
+        var urlPdf = "https://firebasestorage.googleapis.com/v0/b/corriere-up-dev.appspot.com/o/biden.pdf?alt=media&token=d80d4ea5-eaa0-41e3-9d3a-8d042194274c.pdf"
         binding.webV.loadUrl(
             "https://docs.google.com/gview?embedded=true&url=$urlPdf"
         );
