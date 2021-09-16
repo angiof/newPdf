@@ -44,7 +44,7 @@ class AcitivtyWebView : AppCompatActivity() {
             }
 
         };
-        var urlPdf = "http://www.didatticarte.it/storiadellarte/18%20picasso.pdf"
+        var urlPdf = "https://www.conoscifirenze.it/upload_file/articoli/files/1-per-un-giorno-firenze.pdf"
         binding.webV.loadUrl(
             "https://docs.google.com/gview?embedded=true&url=$urlPdf"
         );

@@ -28,7 +28,7 @@ class ActivityPdfView : AppCompatActivity() {
         // val fileContent: ByteArray = Files.readAllBytes(file?.toPath())
 
 
-        val input = this.assets.open("ppa.pdf")
+        val input = this.assets.open("pp.pdf")
 
         val buffer = ByteArrayOutputStream()
         var nRead: Int
