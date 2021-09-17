@@ -33,7 +33,6 @@ class AcitivtyWebView : AppCompatActivity() {
 
         binding.webV.settings.javaScriptEnabled = true;
         binding.webV.settings.pluginState = WebSettings.PluginState.ON;
-        binding.webV.loadUrl("javascript:(function() {" + "document.querySelector('[role=toolbar]').remove();})()")
 
         //---you need this to prevent the webview from
         // launching another browser when a url
@@ -51,27 +50,18 @@ class AcitivtyWebView : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 binding.webV.loadUrl("javascript:(function() { " + "document.querySelector('[role=toolbar]').remove();})()")
-                binding.webV.visibility = View.VISIBLE
 
             }
 
             override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
                 super.onPageStarted(view, url, favicon)
 
-                //binding.webV.loadUrl("javascript:(function() { " +"document.querySelector('[role=toolbar]').remove();})()")
+                binding.webV.loadUrl("javascript:(function() { " +"document.querySelector('[role=toolbar]').remove();})()")
             }
-
-
         };
-        binding.webV.loadUrl("javascript:(function() {" + "document.querySelector('[role=toolbar]').remove();})()")
-        binding.webV.reload()
-        var urlPdf =
-            "https://firebasestorage.googleapis.com/v0/b/corriere-up-dev.appspot.com/o/biden.pdf?alt=media&token=d80d4ea5-eaa0-41e3-9d3a-8d042194274c"
+        var urlPdf ="https://firebasestorage.googleapis.com/v0/b/corriere-up-dev.appspot.com/o/biden.pdf?alt=media&token=d80d4ea5-eaa0-41e3-9d3a-8d042194274c"
         binding.webV.loadUrl("https://docs.google.com/viewer?url=$urlPdf");
-        binding.webV.visibility = View.INVISIBLE
-        binding.webV.zoomIn()
-        binding.webV.zoomIn()
-        binding.webV.zoomIn()
+
 
     }
 
