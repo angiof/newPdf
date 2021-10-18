@@ -6,7 +6,7 @@
     android:background="#e1bee7"
 
     android:layout_height="match_parent"
-    tools:context=".activities.views.online.ActvityOnline">
+    tools:context=".activities.views.pdfKitOnline.ActvityOnline">
 
     <ProgressBar
         android:id="@+id/progressBar"

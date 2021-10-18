@@ -1,4 +1,4 @@
-package com.example.newpdf.activities.views.online
+package com.example.newpdf.activities.views.pdfKitOnline
 
 import com.pspdfkit.document.download.source.DownloadSource
 import java.io.IOException

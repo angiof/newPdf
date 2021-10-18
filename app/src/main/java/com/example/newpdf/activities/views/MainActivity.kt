@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.newpdf.R
-import com.example.newpdf.activities.views.online.ActvityOnline
+import com.example.newpdf.activities.views.pdfKitOnline.ActvityOnline
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btn: View
