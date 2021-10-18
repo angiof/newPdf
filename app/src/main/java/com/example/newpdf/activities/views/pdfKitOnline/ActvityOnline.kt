@@ -17,7 +17,7 @@ import com.pspdfkit.ui.PdfActivity
 import java.io.File
 import java.net.MalformedURLException
 import java.net.URL
-
+//activity che gestisce la lib pdfkit online
 class ActvityOnline : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var textView: TextView
@@ -25,6 +25,7 @@ class ActvityOnline : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actvity_online)
         textView=findViewById(R.id.textoUscita)
+
 
 
         val source: WebDownloadSource = try {
